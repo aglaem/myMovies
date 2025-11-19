@@ -1,11 +1,11 @@
-export const movies: { titre: string; durée: number; acteur: string[]; réalisateur: string; résumé: string; poster: string; }[] = [
+export const movies: any = [
     {
         "titre": "Fight Club",
         "durée": 139,
         "acteur": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
         "réalisateur": "David Fincher",
         "résumé": "Un homme insomniaque rencontre un vendeur de savon excentrique et fonde un club de combat clandestin.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMmEzYjYxYzUtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://posters.movieposterdb.com/05_02/1999/0137523/l_7868_0137523_d46e33b9.jpg"
     },
     {
         "titre": "Pulp Fiction",
@@ -13,7 +13,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
         "réalisateur": "Quentin Tarantino",
         "résumé": "Des histoires entrelacées de criminels à Los Angeles, mêlant humour noir et violence.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzYjUtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://posters.movieposterdb.com/25_11/1994/110912/l_pulp-fiction-movie-poster_f099050c.jpg"
     },
     {
         "titre": "Interstellar",
@@ -21,7 +21,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         "réalisateur": "Christopher Nolan",
         "résumé": "Des astronautes voyagent à travers un trou de ver pour sauver l'humanité.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3YzUtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/51oSZGe6YpL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "titre": "Inception",
@@ -29,7 +29,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
         "réalisateur": "Christopher Nolan",
         "résumé": "Un voleur infiltre les rêves pour voler des secrets et implanter des idées.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjYxMV5BMl5BanBnXkFtZTcwODI5OTM0Mw@@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/714Mwnmg2mL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "titre": "The Matrix",
@@ -37,7 +37,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         "réalisateur": "Lana Wachowski, Lilly Wachowski",
         "résumé": "Un hacker découvre que la réalité est une simulation contrôlée par des machines.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3NzAtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQ_cJ69LOcvDFZeKidHUa5hddTjU1COXEdQ&s"
     },
     {
         "titre": "Forrest Gump",
@@ -45,7 +45,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
         "réalisateur": "Robert Zemeckis",
         "résumé": "Un homme simple traverse les grands événements de l'histoire américaine.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODQzYjUtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWubLaJao3CyhzDrf1CZOPesdAvcnFHFlTdg&s"
     },
     {
         "titre": "The Shawshank Redemption",
@@ -53,7 +53,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Tim Robbins", "Morgan Freeman"],
         "réalisateur": "Frank Darabont",
         "résumé": "Un homme injustement emprisonné se lie d'amitié avec un détenu et trouve l'espoir.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwIb0KhPhHpYivtRdziLAei3sCg_hQwt7LA&s"
     },
     {
         "titre": "Gladiator",
@@ -61,7 +61,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Russell Crowe", "Joaquin Phoenix"],
         "réalisateur": "Ridley Scott",
         "résumé": "Un général romain devient gladiateur pour venger sa famille.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMzY3NjYxMV5BMl5BanBnXkFtZTcwODI5OTM0Mw@@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/71LPLHCs7HL.jpg"
     },
     {
         "titre": "Titanic",
@@ -69,7 +69,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Leonardo DiCaprio", "Kate Winslet"],
         "réalisateur": "James Cameron",
         "résumé": "Une romance tragique à bord du Titanic.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjYxMV5BMl5BanBnXkFtZTcwODI5OTM0Mw@@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56M1ROonpaKrnCwItYpoXdjVYggg32bh0rA&s"
     },
     {
         "titre": "The Godfather",
@@ -77,7 +77,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Marlon Brando", "Al Pacino", "James Caan"],
         "réalisateur": "Francis Ford Coppola",
         "résumé": "La saga d'une famille mafieuse italienne.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmYtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "poster": "https://i.ebayimg.com/images/g/ioUAAOSw6Btj8lJA/s-l1200.jpg"
     },
     {
         "titre": "The Dark Knight",
@@ -85,7 +85,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         "réalisateur": "Christopher Nolan",
         "résumé": "Batman affronte le Joker, un criminel anarchiste qui plonge Gotham dans le chaos.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZLyEdqDjglSgaSPhL6k8o2sPqZkkS2Jr7A&s"
     },
     {
         "titre": "La La Land",
@@ -93,7 +93,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Ryan Gosling", "Emma Stone"],
         "réalisateur": "Damien Chazelle",
         "résumé": "Un musicien et une actrice aspirante tombent amoureux tout en poursuivant leurs rêves à Los Angeles.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjA2MzYyNjYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzd5Q-NjaMkNfBUkM4eDKIV3XbJsYq55ANZQ&s"
     },
     {
         "titre": "Parasite",
@@ -101,7 +101,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
         "réalisateur": "Bong Joon-ho",
         "résumé": "Une famille pauvre s'infiltre dans la vie d'une famille riche, déclenchant une série d'événements tragiques.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjkzYzUtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy13E2aTZ9PBjCFctNNI68_0PoIpXurcPQNw&s"
     },
     {
         "titre": "Whiplash",
@@ -109,7 +109,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Miles Teller", "J.K. Simmons"],
         "réalisateur": "Damien Chazelle",
         "résumé": "Un jeune batteur ambitieux est poussé à ses limites par un professeur de musique impitoyable.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXz5KW8zUzSKMtp5dP41rqkqhCQF3_cEhSA&s"
     },
     {
         "titre": "The Grand Budapest Hotel",
@@ -117,7 +117,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Ralph Fiennes", "Tony Revolori", "Saoirse Ronan"],
         "réalisateur": "Wes Anderson",
         "résumé": "Un concierge d'hôtel et son protégé sont impliqués dans une affaire de meurtre et d'héritage.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/715nMrDs+5L._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "titre": "Joker",
@@ -125,7 +125,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Joaquin Phoenix", "Robert De Niro"],
         "réalisateur": "Todd Phillips",
         "résumé": "Un homme marginalisé sombre dans la folie et devient le célèbre criminel Joker.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/51GGNTH7cWL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "titre": "Dune (2021)",
@@ -133,7 +133,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Timothée Chalamet", "Zendaya", "Oscar Isaac"],
         "réalisateur": "Denis Villeneuve",
         "résumé": "Le jeune Paul Atreides doit protéger sa famille et son peuple sur la planète désertique Arrakis.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://fr.web.img6.acsta.net/pictures/21/08/10/12/20/4633954.jpg"
     },
     {
         "titre": "Everything Everywhere All at Once",
@@ -141,7 +141,7 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Michelle Yeoh", "Ke Huy Quan", "Stephanie Hsu"],
         "réalisateur": "Daniel Kwan, Daniel Scheinert",
         "résumé": "Une femme découvre qu'elle peut accéder à des versions alternatives d'elle-même pour sauver le multivers.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://i.ebayimg.com/images/g/V-EAAOSwrKBi4aU1/s-l1200.jpg"
     },
     {
         "titre": "Avatar",
@@ -149,14 +149,14 @@ export const movies: { titre: string; durée: number; acteur: string[]; réalisa
         "acteur": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
         "réalisateur": "James Cameron",
         "résumé": "Un marine paraplégique infiltre une tribu extraterrestre sur Pandora et remet en question ses loyautés.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI2NzYxNzYxMV5BMl5BanBnXkFtZTgwNjUxNjYzMDI@._V1_.jpg"
+        "poster": "https://m.media-amazon.com/images/I/71kiTUly50L._AC_UF1000,1000_QL80_.jpg"
     },
     {
-        "titre": "Les Évadés (The Shawshank Redemption)",
-        "durée": 142,
-        "acteur": ["Tim Robbins", "Morgan Freeman"],
-        "réalisateur": "Frank Darabont",
-        "résumé": "Un homme injustement emprisonné se lie d'amitié avec un détenu et trouve l'espoir.",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtYzY3Zi00ZTMxLTk3YjYtYjYxYjYxYjYxYjYxXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg"
+        "titre": "Spirited Away",
+        "durée": 125,
+        "acteur": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
+        "réalisateur": "Hayao Miyazaki",
+        "résumé": "Chihiro, une jeune fille de 10 ans, se retrouve piégée dans un monde magique peuplé de esprits, de créatures étranges et de dieux oubliés. Pour sauver ses parents transformés en cochons, elle devra travailler dans les bains publics de Yubaba, une sorcière autoritaire.",
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFXQ31k8NhFvoinzOo0ub6i4VH82uaFxsKIg&s"
     }
 ]
