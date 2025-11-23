@@ -1,6 +1,24 @@
-const Movie = ({movieData}: any) => {
+import { useState } from "react";
+import { LuCross } from "react-icons/lu";
+import { FaCheck } from "react-icons/fa";
 
-    console.log(movieData.titre);
+
+const Movie = ({ movieData, addMovieApp, wishlist }: any) => {
+
+    const [isWishlisted, setIsWishlisted] = useState<boolean>(wishlist.includes(movieData.titre));
+    const movieWishlist = () => {
+        setIsWishlisted(!isWishlisted);
+        isWishlisted || wishlist.includes(movieData.titre) ? "Ce film est déjà ajouté" : addMovieApp(movieData, isWishlisted);
+    }
+
+    const [count, setCount] = useState<number>(0);
+
+    // Function to handle like button click
+
+    const countLike = () => {
+        setCount(count + 1);
+    }
+
     const formatMinutes = (minutes: number): string => {
         const heures = Math.floor(minutes / 60);
         const mins = minutes % 60;
@@ -19,12 +37,16 @@ const Movie = ({movieData}: any) => {
                     <p className="mb-3 text-white text-center">{movieData.acteur.join(', ')}</p>
                     <p className="mb-6 text-white text-center">{movieData.résumé.slice(0, 100)}...</p>
                     <div className="flex justify-evenly gap-2">
-                        <a href="#" className="inline-flex items-center text-black bg-red-700 box-border border-none hover:bg-red-500 hover:text-heading focus:ring-4 focus:bg-red-500 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-                            Like 0
-                        </a>
-                        <a href="#" className="inline-flex items-center text-black bg-teal-700 box-border border-none hover:bg-teal-500 hover:text-heading focus:ring-4 focus:ring-teal-500 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-                            Add to wishlist
-                        </a>
+                        <div>
+                            <button onClick={() => countLike()} className="inline-flex items-center text-black bg-red-700 box-border border-none hover:bg-red-500 hover:text-heading focus:ring-4 focus:bg-red-500 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                                Like {count}
+                            </button>
+                        </div>
+                        <div>
+                            <button onClick={() => movieWishlist()} className="inline-flex items-center text-black bg-teal-700 box-border border-none hover:bg-teal-500 hover:text-heading focus:ring-4 focus:ring-teal-500 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:cursor-pointer">
+                                Add to wishlist {isWishlisted ? <FaCheck className="size-5 ml-2" /> : <LuCross className="size-5 ml-2" />}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
