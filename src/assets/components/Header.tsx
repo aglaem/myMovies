@@ -3,9 +3,16 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaSearch, FaHome } from "react-icons/fa";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import type { Imovie } from '../interfaces/Imovie';
+
+interface HeaderProps {
+    wishlist: Imovie[];
+    updateHeadWishlist: (theMovie: Imovie) => void;
+}
 
 
-export default function Header({ wishlist}: any) {
+export default function Header({ wishlist, updateHeadWishlist }: HeaderProps) {
 
     
 
@@ -45,16 +52,16 @@ export default function Header({ wishlist}: any) {
                                     >
                                         <div className="py-1">
                                             <MenuItem>
-                                                <a
-                                                    href="#"
-                                                    className="block px-4 py-2 text-sm text-gray-300 data-focus:bg-white/5 data-focus:text-white data-focus:outline-hidden"
+                                                <div
+                                                    className="block px-4 py-2 text-sm text-gray-300"
                                                 >
                                                     {wishlist.length === 0 ? (
                                                         <span>Your wishlist is empty</span>
-                                                    ) : (wishlist.map((movieTitle: string, index: number) => (
-                                                        <li key={index}>{movieTitle}</li>
+                                                    ) : (wishlist.map((movie : Imovie) => (
+                                                        <li key={movie.id} className='list-none flex justify-between'>{movie.titre}<button onClick={() => updateHeadWishlist(movie)} className='hover:cursor-pointer'><RiDeleteBin5Fill /></button></li>
+                                                        
                                                     )))}
-                                                </a> 
+                                                </div> 
                                             </MenuItem>
                                         </div>
                                     </MenuItems>

@@ -1,4 +1,6 @@
-export const movies: any = [
+import type { Imovie } from "../interfaces/Imovie";
+
+export const movies: Imovie[] = [
     {
         "id" : 1,
         "titre": "Fight Club",
