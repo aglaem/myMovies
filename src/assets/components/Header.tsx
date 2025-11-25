@@ -3,18 +3,19 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaSearch, FaHome } from "react-icons/fa";
-import { RiDeleteBin5Fill } from "react-icons/ri";
-import type { Imovie } from '../interfaces/Imovie';
+import { Link } from 'react-router';
+// import { RiDeleteBin5Fill } from "react-icons/ri";
+// import type { Imovie } from '../interfaces/Imovie';
 
-interface HeaderProps {
-    wishlist: Imovie[];
-    updateHeadWishlist: (theMovie: Imovie) => void;
-}
+// interface HeaderProps {
+//     wishlist: Imovie[];
+//     updateHeadWishlist: (theMovie: Imovie) => void;
+// }
 
 
-export default function Header({ wishlist, updateHeadWishlist }: HeaderProps) {
+export default function Header(/*{ wishlist, updateHeadWishlist }: HeaderProps*/) {
 
-    
+
 
     return (
         <Disclosure
@@ -36,11 +37,27 @@ export default function Header({ wishlist, updateHeadWishlist }: HeaderProps) {
                         <div className="flex shrink-0 items-center">
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
-                            <div className="flex space-x-4">
-                                <a href="#" className="rounded-md px-3 py-2 m-auto text-sm font-medium text-teal-500">
+                            <div className="flex space-x-4 items-center">
+                                <Link to="/" className="rounded-md px-3 py-2 m-auto text-sm font-medium text-teal-500">
                                     <FaHome className="size-6 text-gray-700" />
-                                </a>
-                                <Menu as="div" className="relative inline-block m-auto">
+                                </Link>
+                                <Link to="/wishlist"
+                                    className="block px-4 py-2 text-sm text-gray-700"
+                                >
+                                    Wishlist
+                                </Link>
+                                <Link to="/signup"
+                                    className="block px-4 py-2 text-sm text-gray-700"
+                                >
+                                    Signup
+                                </Link>
+                                <Link to="/signin"
+                                    className="block px-4 py-2 text-sm text-gray-700"
+                                >
+                                    Signin
+                                </Link>
+
+                                {/* <Menu as="div" className="relative inline-block m-auto">
                                     <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-gray-700 inset-ring-1 hover:bg-red-950/20 hover:cursor-pointer">
                                         Wishlist
                                         <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-gray-700" />
@@ -51,6 +68,27 @@ export default function Header({ wishlist, updateHeadWishlist }: HeaderProps) {
                                         className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-red-950/50 outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
                                     >
                                         <div className="py-1">
+                                            <MenuItem>
+                                                <Link to="/wishlist"
+                                                    className="block px-4 py-2 text-sm text-gray-300"
+                                                >
+                                                    Wishlist
+                                                </Link>
+                                            </MenuItem>
+                                            <MenuItem>
+                                                <Link to="/signup"
+                                                    className="block px-4 py-2 text-sm text-gray-300"
+                                                >
+                                                    Signup
+                                                </Link>
+                                            </MenuItem>
+                                            <MenuItem>
+                                                <Link to="/signin"
+                                                    className="block px-4 py-2 text-sm text-gray-300"
+                                                >
+                                                    Signin
+                                                </Link>
+                                            </MenuItem>
                                             <MenuItem>
                                                 <div
                                                     className="block px-4 py-2 text-sm text-gray-300"
@@ -65,7 +103,7 @@ export default function Header({ wishlist, updateHeadWishlist }: HeaderProps) {
                                             </MenuItem>
                                         </div>
                                     </MenuItems>
-                                </Menu>
+                                </Menu> */}
                             </div>
                         </div>
                     </div>

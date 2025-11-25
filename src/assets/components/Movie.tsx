@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LuCross } from "react-icons/lu";
 import { FaCheck } from "react-icons/fa";
 import type { Imovie } from "../interfaces/Imovie";
+import { Link } from "react-router";
 
 interface MovieProps {
     movieData: Imovie;
@@ -36,7 +37,7 @@ const Movie = ({ movieData, updateMovieWishlist, wishlist }: MovieProps) => {
                 <div
                     className="absolute inset-0 flex items-center justify-evenly text-white transition-all duration-900 ease-out bg-black flex-col p-5 opacity-0 group-hover:opacity-90 group-hover:translate-y-0 translate-y-100"
                 >
-                    <h5 className="text-2xl font-semibold tracking-tight text-white text-center">{movieData.titre}</h5>
+                    <Link to={`/movies/${movieData.id}`}><h5 className="text-2xl font-semibold tracking-tight text-white text-center">{movieData.titre}</h5></Link >
                     <p className="mb-1 text-white text-center">{formatMinutes(movieData.durée)}</p>
                     <p className="mb-3 text-white text-center">{movieData.acteur.join(', ')}</p>
                     <p className="mb-6 text-white text-center">{movieData.résumé.slice(0, 100)}...</p>

@@ -1,6 +1,5 @@
 // Home page displaying movies and managing wishlist
 
-import Header from "../components/Header";
 import Movie from "../components/Movie";
 import { movies } from "../data/movie";
 import { useState } from "react";
@@ -22,10 +21,8 @@ const Home = () => {
 
 
   return (
-    <div className="bg-linear-to-b from-gray-800 to-red-950">
-      <Header wishlist={wishlist} updateHeadWishlist={updateWishlist} />
-      <p></p>
-      <div className="flex justify-evenly flex-wrap gap-0.5 pt-4 gap-y-5">
+    <div className="h-max p">
+      <div className="flex justify-evenly flex-wrap gap-5 pt-4 ">
         {
           movies.length > 0 ? (
             movies.map((movie: Imovie) => (
