@@ -1,13 +1,26 @@
-// Home page displaying movies and managing wishlist
+// // Home page displaying movies and managing wishlist
+
+import { getMovies } from "../data/movie";
 
 import Movie from "../components/Movie";
-import { movies } from "../data/movie";
+
+import { useEffect } from "react";
 import { useState } from "react";
 import type { Imovie } from "../interfaces/Imovie";
 
 const Home = () => {
 
-    const [wishlist, setWishlist] = useState<Imovie[]>([]);
+  const [movies, setMovies] = useState<Imovie[]>([]);
+
+  useEffect(() => {
+    const getTMDBMovies = async () => {
+      const moviesTMDB = await getMovies();
+      setMovies(moviesTMDB);
+    };
+    getTMDBMovies();
+  }, []);
+
+  const [wishlist, setWishlist] = useState<Imovie[]>([]);
 
 
   const updateWishlist = (theMovie: Imovie) => {
@@ -35,6 +48,7 @@ const Home = () => {
 
     </div>
   )
+
 };
 
 export default Home;
