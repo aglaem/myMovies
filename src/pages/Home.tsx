@@ -1,12 +1,10 @@
 // // Home page displaying movies and managing wishlist
 
-import { getMovies } from "../data/movie";
-
-import Movie from "../components/Movie";
-
 import { useEffect } from "react";
 import { useState } from "react";
-import type { Imovie } from "../interfaces/Imovie";
+import { getMovies } from "../assets/data/movie";
+import type { Imovie } from "../assets/interfaces/Imovie";
+import Movie from "../assets/components/Movie";
 
 const Home = () => {
 

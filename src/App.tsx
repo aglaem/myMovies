@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Header from "./assets/components/Header";
-import Home from "./assets/pages/Home";
-import Wishlist from "./assets/pages/Wishlist";
-import Signin from "./assets/pages/Signin";
-import Signup from "./assets/pages/Signup";
+import Home from "./pages/Home";
+import Wishlist from "./pages/Wishlist";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 import Footer from "./assets/components/Footer";
-import MovieDetails from "./assets/pages/MovieDetails";
+import MovieDetails from "./pages/MovieDetails";
 
 
 function App() {

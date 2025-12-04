@@ -1,9 +1,10 @@
 // Movie details page displaying detailed information about a selected movie
-import { getMovies } from "../data/movie";
+
 import { useParams } from "react-router";
-import type { Imovie } from "../interfaces/Imovie";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
+import { getMovies } from "../assets/data/movie";
+import type { Imovie } from "../assets/interfaces/Imovie";
 
 const MovieDetails = () => {
     const [movies, setMovies] = useState<Imovie[]>([]);
