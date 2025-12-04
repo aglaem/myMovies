@@ -24,12 +24,6 @@ const Movie = ({ movieData, updateMovieWishlist, wishlist }: MovieProps) => {
         setCount(count + 1);
     }
 
-    const formatMinutes = (minutes: number): string => {
-        const heures = Math.floor(minutes / 60);
-        const mins = minutes % 60;
-        return `${heures}h${mins.toString().padStart(2, '0')}`;
-    }
-
     return (
         <div>
             <div className="bg-gray-700 block max-w-sm p-6 border-none rounded-base relative w-75 group overflow-hidden shadow-lg">
